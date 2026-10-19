@@ -12,10 +12,10 @@ for (int i = 1; i <= 10000; i++)
 File.WriteAllText("cisla.txt", cisla);
 obsah=File.ReadAllText("cisla.txt");
 string[] casti= obsah.Split(',');
+List<int> finalList = new List<int>();
 for (int i = 0; i < casti.Length; i++)
 {
     int medziCislo;
-    List<int> finalList = new List<int>();
     medziCislo = int.Parse(casti[i]);
     finalList.Add(medziCislo);
 }
